@@ -1,0 +1,236 @@
+@charset "utf-8";
+h1{
+    text-align: center;
+}
+h1 img{
+    width: 80px;
+    margin: 10px;
+}
+.inner{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.cta{
+    /*padding: 10px;*/
+    /*background: url(../images/feliz_power/cta_back.png) left top /cover no-repeat;*/
+    text-align: center;
+}
+.cta a:hover img{
+    opacity: 0.5;
+    transition: 1s;
+   
+}
+h2{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ff317b;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.section-note{
+    margin: -8px 0 18px;
+    text-align: center;
+    color: #666;
+    font-size: 0.82rem;
+    font-weight: 700;
+    line-height: 1.8;
+}
+.arrow{
+    width: 50%;
+    margin: 0 auto;
+}
+.voice{
+    padding-bottom: 50px;
+    background: #ff317b;
+}
+.voice h2{
+    margin-top: 0;
+    padding-top: 40px;
+    color: #FFF;
+}
+.voice li {
+    margin: 0 10px;
+}
+
+.product{
+    margin-top: 0;
+    margin-bottom: 150px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    background: #e6e6e6;
+    position: relative;
+}
+.product__box{
+    display: flex;
+}
+.product li{
+    margin-top: 1rem;
+}
+.product li::before{
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(../images/lp/sec4_icon.png) center center/cover no-repeat ;
+}
+h3{
+    font-weight: bold;
+}
+.product::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 7vw;
+    position: absolute;
+    top: 100%;
+    background: url(../images/lp/sec4_dev.png) center center/cover no-repeat;
+}
+.support{
+    margin-bottom: 30px;
+}
+.campaign{
+}
+.campaign .inner{
+}
+.campaign p{
+    text-align: center;
+    color: #333333;
+}
+.campaign .cta{
+    background: url(../images/feliz_power/cta_back.png)left top /center no-repeat ;
+        padding-bottom: 50px;
+
+}
+.faq .inner{
+    background: #e6e6e6;
+    padding-bottom: 100px;
+}
+.faq h2{
+    margin-top: 0;
+    padding-top: 40px;
+}
+.accordion-008 {
+    max-width: 500px;
+    margin: 0 auto 10px;
+    border-radius: 25px;
+    box-shadow: 0 7px 15px -5px rgb(0 0 0 / 5%);
+    background-color: #fff;
+}
+
+.accordion-008 summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 1em 2em;
+    color: #333333;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.accordion-008 summary::-webkit-details-marker {
+    display: none;
+}
+
+.accordion-008 summary::before,
+.accordion-008 summary::after {
+    width: 3px;
+    height: .9em;
+    border-radius: 5px;
+    background-color: #333333b3;
+    content: '';
+}
+
+.accordion-008 summary::before {
+    position: absolute;
+    right: 2em;
+    rotate: 90deg;
+}
+
+.accordion-008 summary::after {
+    transition: rotate .3s;
+}
+
+.accordion-008[open] summary::after {
+    rotate: 90deg;
+}
+
+.accordion-008 p {
+    transform: translateY(-10px);
+    opacity: 0;
+    margin: 0;
+    padding: .3em 2em 1.5em;
+    color: #333333;
+    transition: transform .5s, opacity .5s;
+}
+
+.accordion-008[open] p {
+    transform: none;
+    opacity: 1;
+}
+summary span{
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: url(../images/feliz_power/q.png) center center /cover no-repeat;
+}
+details p{
+    display: flex;
+}
+details p::before{
+    content: "";
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: url(../images/lp/a.png) center center /cover no-repeat;
+    flex-shrink: 0;
+}
+.contact .inner{
+    background: #666;
+}
+.contact h2{
+    margin-top: 0;
+    padding-top: 30px;
+    color: #FFF;
+}
+.contact .cta{
+    background: #666;
+}
+.contact .cta a{
+    display: block;
+    max-width: 400px;
+    margin: 0 auto 50px;
+    padding: 10px;
+    background:  #ff317b;
+    border-radius: 30px;
+}
+.contact p{
+    text-align: center;
+    color: #fff;
+    line-height: 2;
+}
+
+@media screen and (min-width:769px) {
+    h1 img{
+        width: 130px;
+    }
+    .cta a{
+        font-size: 1.6rem;
+    }
+    h2{
+        font-size: 3.6rem;
+    }
+    h3{
+        font-size: 1.5rem;
+    }
+    .product li{
+        font-size: 1.4rem;
+    }
+    .campaign p{
+        font-size: 1.5rem;
+    }
+    .accordion-008{
+        min-width: 800px;
+    }
+}
