@@ -1,4 +1,7 @@
 @charset "utf-8";
+body{
+    font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", YuGothic, "Meiryo", "Noto Sans JP", sans-serif;
+}
 h1{
     text-align: center;
 }
